@@ -1,0 +1,55 @@
+body {
+    background-color: #f8f8f8;
+}
+.menu {
+    font-style: italic;
+    font-size: 20px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #8b00ff;
+}
+/* Карточка товара */
+.heading {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background: #eaeaea;
+}
+.characteristics {
+	color: #303030;
+	font-size: 14px;
+	font-family: "Times New Roman";
+	line-height: 30px;
+	list-style-image: url(img/list.png);
+}
+.brief {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+.detailed {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+/* Рамка изображения */
+.border {
+	outline: 3px solid blue;
+}
+/* Контакты */
+form input[type="text"] {
+	width: 300px;
+	height: 20px;
+}
+form input::placeholder, textarea::placeholder {
+	color: grey;
+	opacity: 0.75;
+	font-size: 12px;
+}
+form textarea::placeholder {
+	font-size: 14px;
+}

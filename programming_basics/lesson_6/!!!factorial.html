@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function recursiveFactirial(n){
+			if(n == 0)
+				return 1;
+			else
+				return recursiveFactirial(n - 1) * n;
+		}
+
+		var rf = recursiveFactirial(5);
+		alert(rf);
+	</script>
+</body>
+</html>

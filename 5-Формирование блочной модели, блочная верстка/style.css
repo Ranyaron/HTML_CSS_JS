@@ -1,0 +1,159 @@
+body {
+    background-color: #f8f8f8;
+}
+.menu {
+    font-style: italic;
+    font-size: 20px;
+    list-style-type: none;
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+}
+.menu li {
+	display: inline;
+}
+.menu li a {
+    color: #8b00ff;
+ }
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+.header {
+	background: url(img/fon.jpg);
+	height: 130px;
+	position: relative;
+}
+.header img {
+	margin: 15px 15px;
+}
+.content {
+	background-color: #e6e9f2;
+	padding: 15px 15px;
+	position: relative;
+}
+.content h1 {
+	margin-top: 0px;
+}
+.content a {
+	float: left;
+	padding-right: 15px;
+}
+.content_2 {
+	color: blue;
+	background-color: #55adff;
+	padding: 15px 15px;
+	position: relative;
+}
+.other_goods {
+	color: white;
+}
+.button {
+	position: absolute;
+	right: 15px;
+	border-radius: 20px;
+	background-color: #1896FF;
+	padding: 15px 15px;
+	color: white;
+	text-decoration: none;
+}
+.button:hover {
+	background-color: #c5d0e6;
+	color: #8b00ff
+}
+.footer {
+	background-color: #466e9c;
+	height: 100px;
+	position: relative;
+	clear: both;
+}
+.footer span {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+/* Каталог */
+.list {
+	display: inline-block;
+	margin: 5px;
+}
+/* hover & active */
+.menu li a:hover {
+	color: #1896FF;
+}
+.other_goods:hover {
+	color: blue;
+}
+.menu li a:active,
+.other_goods:active {
+	color: red;
+}
+/* Карточка товара */
+.heading {
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	background: blue;
+
+}
+.characteristics {
+	color: #303030;
+	font-size: 14px;
+	font-family: "Times New Roman";
+	line-height: 30px;
+	list-style-image: url(img/list.png);
+}
+.brief, .detailed {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.description:first-letter,
+.brief:first-letter,
+.detailed:first-letter {
+	font-size: 30px;
+	color: blue;
+}
+/* Таблица в карточке товара */
+.characteristics {
+	border-collapse: collapse;
+}
+.characteristics tr:nth-child(1) {
+	height: 150px;
+}
+.characteristics td {
+	border: 1px solid blue;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	text-align: left;
+}
+/* Рамка изображения */
+.border {
+	outline: 3px solid blue;
+}
+.border:hover {
+	outline: none;
+}
+/* Контакты */
+form input[type="text"] {
+	width: 300px;
+	height: 20px;
+}
+form input::placeholder, textarea::placeholder {
+	color: grey;
+	opacity: 0.75;
+	font-size: 12px;
+}
+form textarea::placeholder {
+	font-size: 14px;
+}
+.email:focus {
+	color: white;
+	background-color: black;
+}
+textarea {
+	text-transform: capitalize;
+}

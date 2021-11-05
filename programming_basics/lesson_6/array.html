@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function compareAswers(userAnswer, answer){
+			if(userAnswer == answer) {
+			alert("Все верно!");
+			} else {
+				alert("А вот и нет. Правильный ответ " + answer);
+			}
+		}
+
+		function getRandomNumber(max){
+			return Math.round(Math.random() * max);
+		}
+
+		function generateRandomNumberArray(length){
+			var numbers = [];
+			for (var i = 0; i < 5; i++) {
+				var randomNumbers = getRandomNumber(100);
+				numbers.push(randomNumbers);
+			}
+			return numbers;
+		}
+
+		var numbers = generateRandomNumberArray(5);
+
+		alert("Запомните числа и их порядок: " + numbers);
+
+		var userAnswer = +prompt("Каким было первое число?");
+		compareAswers(userAnswer, numbers[0]);
+
+		userAnswer = +prompt("А последнее?");
+		compareAswers(userAnswer, numbers.length - 1);
+
+		var n = getRandomNumber(numbers.length - 1);
+		userAnswer = +prompt("А как насчет числа под номером " + (n + 1) + "?");
+		compareAswers(userAnswer, numbers[n]);
+
+	</script>
+</body>
+</html>

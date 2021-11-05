@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var sum = +prompt("");
+		var percent = +prompt("");
+		var year = 5;
+		var contribution = sum * percent / 100 + sum;
+		document.write(contribution.toFixed(2) + "<br>");
+
+		for(var i = 1; i < year; i++) {
+			contribution = contribution * (percent / 100 + 1);
+			document.write(contribution.toFixed(2) + "<br>");
+		}
+
+	</script>
+</body>
+</html>

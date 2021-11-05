@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var riddle1;
+		var riddle2;
+		var riddle3;
+		var riddle = 0;
+
+		riddle1 = prompt("Сколько будет 2 + 2 * 2");
+		riddle1 = riddle1.toLowerCase();
+			if(riddle1 == 6 || riddle1 == "шесть") {
+				alert("Молодец!");
+				riddle++;
+			} else {
+				alert("Вы не угадали.");
+			}
+
+		riddle2 = prompt("Сколько будет 2 + 2");
+		riddle2 = riddle2.toLowerCase();
+			if (riddle2 == 4 || riddle2 == "четыре") {
+				alert("Молодец!");
+				riddle++;
+			} else {
+				alert("Вы не угадали.");
+			}
+
+		riddle3 = prompt("Сколько будет 2 * 2");
+		riddle3 = riddle3.toLowerCase();
+			if (riddle3 == 4 || riddle3 == "четыре") {
+				alert("Молодец!");
+				riddle++;
+			} else {
+				alert("Вы не угадали.");
+			}
+
+		alert("Правильных ответов: " + riddle + "\nИгра окончена.");
+
+	</script>
+</body>
+</html>

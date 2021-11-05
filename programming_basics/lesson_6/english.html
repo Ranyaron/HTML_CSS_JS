@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function askForWords(words){
+			while(words.length != 0) {
+				var i = parseInt(Math.random() * words.length);
+				var userTranslate = prompt("Как переводится слово " + words[i][0]);
+				if(userTranslate == words[i][1]) {
+					alert("Верно!");
+					words.splice(i, 1);
+				} else {
+					alert("Правильный ответ: " + words[i][1]);
+				}
+			}
+		}
+
+		var easyWords = [
+			["food", "еда"],
+			["bike", "велосипед"],
+			["apple", "яблоко"],
+			["do", "делать"],
+			["mean", "иметь в виду"]
+		];
+
+		askForWords(easyWords);
+
+		alert("Вы запомнили простые слова!");
+
+		var hardWords = [
+			["chainsaw", "бензопила"],
+			["squirrel", "белка"],
+			["castle", "замок"],
+			["homeland", "родина"],
+			["sewerage", "канализация"],
+			["bottom", "дно"]
+		];
+
+		askForWords(hardWords);
+
+		alert("Вы запомнили все слова!");
+
+	</script>
+</body>
+</html>

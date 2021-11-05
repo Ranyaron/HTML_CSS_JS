@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function answers(question, answer){
+			var riddle = prompt(question);
+			riddle = riddle.toLowerCase();
+			for (var i = 0; i < answer.length; i++) {
+				if(riddle == answer[i]) {
+					alert("Молодец!");
+					riddleSum++;
+					return;
+				}
+			}
+			alert("Вы не угадали.");
+		}
+
+		var riddleSum = 0;
+
+		answers("Сколько будет 2 + 2 * 2", [6, "шесть"]);
+		answers("Сколько будет 2 + 2", [4, "четыре"]);
+		answers("Сколько будет 2 * 2", [4, "четыре"]);
+
+		alert("Правильных ответов: " + riddleSum + "\nИгра окончена.");
+
+	</script>
+</body>
+</html>

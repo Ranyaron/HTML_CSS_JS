@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Угалай число</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// a
+		function arrayArr(n){
+			var numbers = [];
+			for (var i = 1; i <= n; i++) {
+				numbers.push(i);
+			}
+			return numbers;
+		}
+
+		alert(arrayArr(10));
+
+		// b
+		function arraySum(array){
+			var sum = 0;
+			for (var i = 0; i < array.length; i++){
+				sum += array[i];
+			}
+			return sum;
+		}
+
+		var arr = [3,2,5];
+		alert(arraySum(arr));
+
+		// c
+		function arrayMax(array){
+			var max = array[0];
+			for (var i = 0; i < array.length; i++){
+				if(array[i] > max){
+					max = array[i]
+				}
+			}
+			return max;
+		}
+
+		var arr = [10,2,5,20,56,14];
+		alert(arrayMax(arr));
+
+		// d
+		function arrayMin(array){
+			var min = array[0];
+			for (var i = 0; i < array.length; i++){
+				if(array[i] < min){
+					min = array[i]
+				}
+			}
+			return min;
+		}
+
+		var arr = [10,2,5,20,56,14];
+		alert(arrayMin(arr));
+
+		// e
+		function arrayEven(array){
+			var even = [];
+			for (var i = 0; i < array.length; i++){
+				if(array[i] % 2 == 0){
+					even.push(array[i]);
+				}
+			}
+			return even;
+		}
+
+		var arr = [1,2,5,20,7,14];
+		alert(arrayEven(arr));
+
+	</script>
+</body>
+</html>
